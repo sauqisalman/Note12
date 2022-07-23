@@ -30,7 +30,9 @@ iframe {
 
 img {
     display: block;
-    margin-top: 10px;
+    margin: 10px 0;
+    width: 500px;
+    height: 700px;
 }
 
 @media (max-width : 400px){
