@@ -16,7 +16,8 @@
     <a href="../index.html" class="back"
       ><i class="fa-solid fa-square-caret-left fa-2x"></i
     ></a>
-    <h1>PERTEMUAN 1 - 15 JULI - ASJ</h1>
+    <!-- PERTEMUAN 15 JULI 2022 -->
+    <h1>PERTEMUAN 15 JULI 2022 - ASJ</h1>
     <ul>
       <li>
         <span>PERINTAH DASAR DEBIAN :</span>
@@ -29,16 +30,109 @@
             rmdir (remove direktory), untuk menghapus direktori atau menghapus
             folder
           </li>
-          <li>
-            ls (list), melihat isi direktori
-          </li>
+          <li>ls (list), melihat isi direktori</li>
+          <li>shutdown now, untuk mematikan debian</li>
+          <li>clear, untuk membersihkan halaman kerja</li>
+          <li>root, untuk masuk ke mode super user</li>
         </ol>
       </li>
-      <li><span>SUMBER :</span>
+      <li>
+        <span>SUMBER :</span>
         <ul>
-            <li><a href="http://www.zpkomputer.com/2016/04/perintah-perintah-dasar-dalam-linux.html">Perintah - perintah dasar dalam Linux Debian</a></li>
+          <li>
+            Perintah dasar linux lainnya bisa liat disini
+            <a
+              href="http://www.zpkomputer.com/2016/04/perintah-perintah-dasar-dalam-linux.html"
+              >Perintah - perintah dasar dalam Linux Debian</a
+            >
+          </li>
         </ul>
-    </li>
+      </li>
+    </ul>
+    <!-- PERTEMUAN 19 JULI 2022 -->
+    <h1>PERTEMUAN 19 JULI 2022 - ASJ</h1>
+    <ul>
+      <li>
+        <span>MENGINSTAL PAKET NET-TOOLS DI DEBIAN :</span> Net-tools merupakan
+        paket yang didalamnya terdapat tool-tool jaringan seperti arp, hostname,
+        ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel
+        and ipmaddr.
+        <ul>
+          <li>
+            Untuk menginstal paket net-tools ketikan perintah :
+            <u>apt-get install net-tools</u>
+          </li>
+        </ul>
+      </li>
+      <li><img src="../foto/paketdebian.jpeg" alt="" /></li>
+      <li>
+        Cara setting DHCP CLient :
+        <a
+          href="https://gudangkrisna.wordpress.com/2017/02/21/cara-konfigurasi-dhcp-client-di-debian-8-5-menggunakan-cli/"
+          >Cara Seting DHCP Client di Debian 8.5</a
+        >
+      </li>
+      <li>
+        Menambah repository pada debian :
+        <a
+          href="https://sites.google.com/a/student.unsika.ac.id/anggayudap/linux/tutorial-menambah-repository-pada-debian"
+          >Tutorial Menambah Repository di Debian</a
+        >
+      </li>
+      <li>
+        Perintah untuk melihat paket yang sudah terisntal di debian, ketikan
+        perintah : <u>dpkg -l</u>
+      </li>
+      <li>
+        Perintah untuk cek ip yang ada di didebian :
+        <ul>
+          <li><u>ip a</u></li>
+          <li><u>ip addr</u></li>
+          <li><u>ifconfig</u></li>
+        </ul>
+      </li>
+      <li><img src="../foto/ipdebian.jpeg" alt="" /></li>
+      <li>
+        <span>CARA SETTING IP ADDRES DI DEBIAN :</span>
+        <ol>
+          <li>
+            <img src="../foto/interfaces_ip.png" alt="" /> Ketikan perintah :
+            nano /etc/network/interfaces
+          </li>
+          <li>
+            Untuk keluar dari sesi ini tekan : ctrl + o (untuk save) kemudian
+            tekan Enter, tekan ctrl + x (untuk keluar)
+          </li>
+          <li>Kemudian ketikan perintah : <u>service networking restart</u></li>
+        </ol>
+      </li>
+    </ul>
+
+    <!-- PERTEMUAN  22 JULI 2022-->
+    <h1>PERTEMUAN 22 JULI 2022 - ASJ</h1>
+    <ul>
+      <li>
+        <span>MENGINSTAL PAKET SSH SERVER DI DEBIAIN :</span> SSH adalah
+        aplikasi pengganti remote login seperti telnet, rsh, dan rlogin, yang
+        jauh lebih aman. Fungsi utama aplikasi ini adalah untuk mengakses mesin
+        secara remote. Sama seperti telnet, SSH Client menyediakan User dengan
+        Shell untuk remote ke mesin.
+        <ol>
+          <li>Ketikan perintah : apt-get install openssh-server</li>
+          <li>Kemudian ketikan perintah : nano /etc/ssh/sshd_config</li>
+          <li>
+            <img src="../foto/sshconfig.png" alt="" /> Untuk keluar dari sesi
+            ini tekan : ctrl + o (untuk save) kemudian tekan Enter, tekan ctrl +
+            x (untuk keluar)
+          </li>
+          <li>Ketikan perintah : <u>service ssh restart</u></li>
+        </ol>
+      </li>
+      <li>
+        <img src="../foto/putty.png" alt="" /> Masuk ke aplikasi PUTTY, pada
+        bagian Host Name masukan ip address debian yang sudah kita setting di
+        bagian interfaces. Kemudian klik open
+      </li>
     </ul>
   </body>
 </html>
